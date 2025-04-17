@@ -1,0 +1,201 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    background-color: var(--clr-primary-bg);
+    box-shadow: var(--clr-shadow);
+    height: 3.2rem;
+    position: fixed;
+    top: 0;
+    z-index: 1; 
+    gap: 10px;
+}
+.navbar-top, .navbar-bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: 5px 5px 5px 100px;
+    font-size: 32px;
+    color: var(--clr-red);
+    cursor: pointer;
+}
+.logo:hover{
+    color: var(--clr-red-light);
+}
+.homeIcon{
+    font-size: 32px;
+    margin: 8px 10px 5px 25px;
+    color: var(--clr-red);
+    cursor: pointer;
+}
+.homeIcon:hover{
+    color: var(--clr-red-light);
+    background-color: #ebebeb;
+    transform: scale(105%);
+    transition-duration: .5s;
+}
+.navbar-icons{
+    font-size: 25px;
+    margin: 10px 10px 5px 25px;
+    color: var(--clr-grey);
+    cursor: pointer;
+}
+.navbar-icons:hover {
+  color: var(--clr-grey-light);
+  transform: scale(105%);
+  transition: 0.3s;
+}
+
+.navbar-bottom input{
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    outline: none;
+}
+.searchIcon{
+    margin-left: -290px;
+    margin-right: 260px;
+    font-size: 18px;
+    color: var(--clr-grey-input);
+}
+input::placeholder{
+    padding-left: 27px;
+    font-size: 14px;
+    color: var(--clr-grey-input);
+}
+.navbar-bottom input:hover{
+    border: 1px solid blue;
+    transition-duration: 0.5s;
+}
+.navbar-bottom button{
+    padding: 10px 20px;
+}
+.tryQuora{
+    margin: 10px 10px 10px 30px;
+    padding: 6px 15px;
+    background-color: var(--clr-primary-bg);
+    border: 1px solid #d8d8d8;
+    border-radius: 20px;
+    outline: none;
+    color: var(--clr-grey);
+    font-weight: 600;
+    cursor: pointer;
+}
+.tryQuora:hover{
+    background-color: var(--clr-grey-light-2);
+}
+.userProfile{
+    padding: 6px;
+    cursor: pointer;
+}
+#nav-userprofile{
+    margin: 6px 10px;
+}
+.globIcon{
+    margin: 5px 13px 5px 10px;
+    font-size: 25px;
+    color: var(--clr-grey);
+    cursor: pointer;
+}
+.globIcon:hover{
+    color: var(--clr-grey-light);
+}
+.addquestion{
+    margin: 9px 10px;
+    padding: 6px 25px 6px 10px;
+    border: 1px solid #d8d8d8;
+    border-radius: 50px;
+    outline: none;
+    background-color: var(--clr-red);
+    color: var(--clr-primary-bg);
+    cursor: pointer;
+    text-decoration: none;
+}
+.addquestion:hover{
+    background-color: var(--clr-red-dark);
+}
+.downArrow{
+    position: absolute;
+    right: 10.6rem;
+    color: var(--clr-primary-bg);
+}
+
+
+@media screen and (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        background-color: var(--clr-red);
+    }
+    .navbar-top, 
+    .navbar-bottom{
+        align-items: center;
+        width: 100%;
+    }
+    .logo{
+        margin: 5px 0 5px 20px;
+    }
+    .logo, 
+    .homeIcon,
+    .navbar-icons{
+        color: var(--clr-primary-bg);
+        font-size: 18px;
+    }
+    .homeIcon{
+        margin: 8px 5px 5px 0;
+    }
+    .navbar-icons{
+        margin: 10px 5px 5px 5px;
+    }
+    #navbar-icons4{
+        margin-left: 0px;
+        margin-right: 40px;
+    }
+    .navbar-bottom input{
+        width: 50%;
+        min-width: 10px;
+        max-width: 150px;
+        margin:5px 10px 12px 25px;
+    }
+    .searchIcon{
+        display: none;
+    }
+    input::placeholder{
+        padding-left: 5px;
+    }    
+    .tryQuora{
+       display: none;
+    }
+    .addquestion{
+        border: 1px solid var(--clr-primary-bg);
+        margin-right: 35px;
+        padding: 6px 10px 6px 10px;
+    }
+    #nav-userprofile{
+        display: none;
+    }
+    .globIcon{
+        display: none;
+    }
+    .downArrow{
+        display: none;
+    }
+    
+}
+
+
+
+
+

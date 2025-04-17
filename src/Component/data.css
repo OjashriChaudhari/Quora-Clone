@@ -1,0 +1,77 @@
+.card{
+    height: auto;
+    width: 37rem;
+    position: relative;
+    top: 5rem;
+    left: 19.5rem;
+    background-color: var(--clr-primary-bg);
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 13px;
+}
+.image{
+    display: flex;
+}
+.title{
+    display: flex;
+}
+.image img{
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+}
+.name{
+    font-size: 23px;
+}
+.title p{
+   position:relative;
+   top: 5px;
+   left: 10px; 
+   color:blue;
+   font-size: 14px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: 500;
+}
+.heading h3{
+    margin-top: 10px;
+    text-align: left;
+}
+.imageUrl img{
+    height: 150px;
+    width: 300px;
+    position: relative;
+    left: 8rem;
+    margin: 10px 10px;
+    
+}
+
+
+@media (max-width: 768px) {
+    .card {
+      width: 90%;
+      left: auto;
+      right: auto;
+      margin: 0 auto 1rem auto;
+      top: 1rem;
+      padding: 20px;
+    }
+  
+    .name {
+      font-size: 18px;
+    }
+  
+    .title p {
+      font-size: 12px;
+      left: 8px;
+    }
+  
+    .imageUrl img {
+      height: auto;
+      width: 100%;
+      left: 0;
+      margin: 10px 0;
+    }
+  }
+  
+  

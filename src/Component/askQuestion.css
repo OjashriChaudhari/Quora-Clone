@@ -1,0 +1,144 @@
+.question-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 5rem auto;
+    padding: 20px;
+    background-color: var(--clr-primary-bg);
+    border-radius: 8px;
+    box-shadow: var(--clr-shadow);
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.question-container h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.user-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.userProfile {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.rightArrowIcon {
+    margin-left: 0;
+    font-size: 27px;
+    color: var(--clr-grey);
+}
+.dropdown-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.dropdownIcon {
+    position: absolute;
+    left: 10px;
+    font-size: 16px;
+    color:  var(--clr-grey);
+}
+select {
+    padding: 5px 0 5px 30px;
+    font-size: 14px;
+    color: var(--clr-grey);
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+}
+select:hover{
+    background-color: #f8f7f7 ;
+}
+.question-container input{
+    margin:10px 0;
+}
+.question-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.question-container input::placeholder{
+    font-size: 18px;
+    padding-left: 0;
+}
+hr{
+    width: 100%;
+    margin-top: 0;
+}
+
+.question-containner-btn{
+    margin: 90px 10px 10px 350px;
+}
+.question-containner-btn .cancelbtn{
+    padding: 7px;
+    margin-right: 13px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.question-containner-btn .questionbtn{
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--clr-primary-bg);
+    background-color: var(--clr-btn);
+    border: none;
+    border-radius: 30px;
+}
+
+
+
+@media (max-width: 768px) {
+    .question-container {
+      width: 85%;
+      margin: 7rem auto;
+      padding: 15px;
+    }
+  
+    .question-container h3 {
+      font-size: 16px;
+    }
+  
+    .user-input-container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .dropdown-wrapper {
+      width: 80%;
+      margin-top: 3px;
+    }
+  
+    select {
+      width: 80%;
+    }
+
+    .question-container input::placeholder{
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    .question-containner-btn {
+      margin: 30px auto 10px auto;
+      display: flex;
+      gap: 10px;
+    }
+  
+    .question-containner-btn .cancelbtn,
+    .question-containner-btn .questionbtn {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
+  

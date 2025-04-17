@@ -1,0 +1,16 @@
+:root{
+    --clr-body:#f0eded;
+    --clr-shadow: rgba(0, 0, 0, 0.24) 0px 2px 3px;
+    --clr-primary-bg:#fff;
+    --clr-red:rgb(192, 26, 26);
+    --clr-red-light:rgb(192, 106, 106);
+    --clr-red-dark: rgb(145, 17, 17);
+    --clr-grey:rgb(87, 87, 87);
+    --clr-grey-light: rgb(133, 133, 133);
+    --clr-grey-light-2: #f8f8f8;
+    --clr-grey-input:#818181;
+    --clr-border:#f8f8f8;
+    --clr-grey-bg:rgb(228, 228, 228);
+    --clr-spaces-bg:rgb(224, 224, 224);
+    --clr-btn: rgb(94, 94, 233);
+}
